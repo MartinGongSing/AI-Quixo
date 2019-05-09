@@ -34,7 +34,7 @@ cube = random.choice(rdmcube)
 ![My idea](https://images.says.com/uploads/story_source/source_image/475645/ea89.jpg)
 
 
-![Copy right](https://www.lomnitzerlaw.com/wp-content/uploads/2015/09/copyright-registration-boca-raton.jpg)
+![Copy right](https://www.lomnitzerlaw.com/wp-content/uploads/2015/09/copyright-registration-boca-raton.jpg){width=40px height=400px}
 
 
 #### Images source
