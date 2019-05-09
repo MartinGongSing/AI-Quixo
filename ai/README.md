@@ -18,6 +18,7 @@ We have used the followings libraries :
 * random 
 
 ```
+example for random : 
 cube = random.choice(rdmcube)
 ```
 

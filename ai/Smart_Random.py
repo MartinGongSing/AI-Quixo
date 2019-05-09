@@ -28,9 +28,6 @@ class Server:
             him = (you + 1) %2
         
         
-
-                
-            
           
         if True : # Joue neutre
         #  Faire une liste ave c NT si liste == 0 alors on prend les X 
