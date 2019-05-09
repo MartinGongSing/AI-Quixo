@@ -31,10 +31,10 @@ cube = random.choice(rdmcube)
 
 ## License
 
-![alt texte](https://images.says.com/uploads/story_source/source_image/475645/ea89.jpg)
+![My idea](https://images.says.com/uploads/story_source/source_image/475645/ea89.jpg)
 
 
-![alt texte](https://www.lomnitzerlaw.com/wp-content/uploads/2015/09/copyright-registration-boca-raton.jpg = 50x50)
+![Copy right](https://www.lomnitzerlaw.com/wp-content/uploads/2015/09/copyright-registration-boca-raton.jpg)
 
 
 #### Images source
