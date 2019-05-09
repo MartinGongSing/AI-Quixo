@@ -9,8 +9,7 @@ We have created an AI capable of playing without making any bad moves, in python
 
 We noticed that the more cubes bearing our symbol we have, the higher the chances of winning are. So our first strategy is to take all the neutral cubes and turn them (litteraly) on our side. Once all the border cubes are taken, we only play with ours, untill a new neutral block appears. \\ A COMPLETER \\ 
 
-### Libraries
-
+## Libraries
 
 We have used the followings libraries : 
 
