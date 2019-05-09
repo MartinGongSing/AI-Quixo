@@ -12,9 +12,9 @@ We noticed that the more cubes bearing our symbol we have, the higher the chance
 ### Libraries
 
 We have used the followings libraries : 
-Markup : * cherrypy              
-         * sys
-         * random 
+* cherrypy              
+* sys
+* random 
 
 ```
 cube = random.choice(rdmcube)
