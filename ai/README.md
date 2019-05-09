@@ -23,7 +23,6 @@ cube = random.choice(rdmcube)
 
 ## Authors
 
-
 * **Yannick Elens** - 16046 - [AleckSinenny](https://github.com/AleckSinenny)
 * **Martin Sing** - 16116 - [MartinGongSing](https://github.com/MartinGongSing)
 
