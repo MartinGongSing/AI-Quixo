@@ -19,47 +19,13 @@ class Server:
         rdmcube = [0,1,2,3,4,5,9,10,14,15,19,20,21,22,23,24]
 
         ### Stocke dans 'you' la valeur de nous 
-        you = 0
-        
+        you = 0        
         if body['players'][1] == body['you']:
             you = 1
             him = (you + 1) %2
-        
-        
 
-        threesome = []
-
-        winlist = [
-                [ 0,  1,  2,  3,  4],
-                [ 5,  6,  7,  8,  9],
-                [10, 11, 12, 13, 14],
-                [15, 16, 17, 18, 19],
-                [20, 21, 22, 23, 24],
-                [ 0,  5, 10, 15, 20],
-                [ 1,  6, 11, 16, 21],
-                [ 2,  7, 12, 17, 22],
-                [ 3,  8, 13, 18, 23],
-                [ 4,  9, 14, 19, 24],
-                [ 0,  6, 12, 18, 24],
-                [ 4,  8, 12, 16, 20] ]
-        for y in winlist:
-            x = 0
-            for x in y:
-                if body['game'][x]== you :
-                elem = x
-                threesome.append(elem)
-
-
-
-        if len(threesome) >= 3: # you en a 3-4 qui se suivent 
-             addcube(ncube, )
-
-             
-            
-          
-        else : # Joue neutre
-        #  Faire une liste ave c NT si liste == 0 alors on prend les X 
-               
+#####################################################################################
+        def basic(self) :
             neutral = []
             i=0
             for i in rdmcube :
@@ -73,7 +39,169 @@ class Server:
                 while body['game'][cube] != None and body['game'][cube] != you:
                     cube = random.choice(rdmcube)
             else:
-                cube = random.choice(neutral)  
+                cube = random.choice(neutral) 
+
+            return cube
+##########################################################################################
+        
+        ################################
+        ################################
+        ################################
+
+        col1 = [ 0,  5, 10, 15, 20]
+        col2 = [ 1,  6, 11, 16, 21]
+        col3 = [ 2,  7, 12, 17, 22]
+        col4 = [ 3,  8, 13, 18, 23]
+        col5 = [ 4,  9, 14, 19, 24]
+        line1 = [ 0,  1,  2,  3,  4]
+        line2 = [ 5,  6,  7,  8,  9]
+        line3 = [10, 11, 12, 13, 14]
+        line4 = [15, 16, 17, 18, 19]
+        line5 = [20, 21, 22, 23, 24]
+        dia1 = [ 0,  6, 12, 18, 24]
+        dia2 = [ 4,  8, 12, 16, 20]        
+        
+        ################################
+        ################################
+        ################################
+        
+             
+        winlist = [
+                [ 0,  1,  2,  3,  4],
+                [ 5,  6,  7,  8,  9],
+                [10, 11, 12, 13, 14],
+                [15, 16, 17, 18, 19],
+                [20, 21, 22, 23, 24],
+                [ 0,  5, 10, 15, 20],
+                [ 1,  6, 11, 16, 21],
+                [ 2,  7, 12, 17, 22],
+                [ 3,  8, 13, 18, 23],
+                [ 4,  9, 14, 19, 24],
+                [ 0,  6, 12, 18, 24],
+                [ 4,  8, 12, 16, 20] ]
+
+
+    ####################################################
+    #############           SMART           ############
+    ####################################################
+        threesome = []
+        other = []
+        
+        for y in winlist:
+            x = 0
+            for x in y:
+                if body['game'][x]== you :
+                    elem = x
+                    threesome.append(elem)
+                elif body['game'][x]!= you :
+                    element = x
+                    other.append(element)
+                
+
+        def listinlist (lineX):
+            for elem in threesome:
+              if elem not in lineX:
+                    return False
+            return True 
+
+
+
+        if len(threesome) == 4 : # you en a 4 qui se suivent 
+            if other in rdmcube and other == None:
+                cube = other[0]
+        #######################################################
+                if cube == 0 :
+                    if listinlist(line1) == True :
+                        direction = 'E'
+                    elif listinlist(dia1) == True:
+                        direction = random.choice(['E','S'])
+                    else : 
+                        direction = 'S'
+                if cube == 1 :
+                    if listinlist(line1) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'S' 
+                if cube == 2 :
+                    if listinlist(line1) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'S'
+                if cube == 3 :
+                    if listinlist(line1) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'S'
+                if cube == 4 :
+                    if listinlist(line1) == True :
+                        direction = 'W'
+                    else : 
+                        direction = 'S'
+        ######################################################
+                if cube == 5 :
+                    if listinlist(line2) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'S'
+                if cube == 9 :                  
+                    if listinlist(line2) == True :
+                        direction = 'W'
+                    else : 
+                        direction = 'S'
+                if cube == 10 :               
+                    if listinlist(line3) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'S'
+                if cube == 14 :                    
+                    if listinlist(line3) == True :
+                        direction = 'W'
+                    else : 
+                        direction = 'S'
+                if cube == 15 :                    
+                    if listinlist(line4) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'S'
+                if cube == 19 :
+                    if listinlist(line4) == True :
+                        direction = 'W'
+                    else : 
+                        direction = 'S'
+                if cube == 20 :
+                    if listinlist(line5) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'N'
+                if cube == 21 :
+                    if listinlist(line5) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'N'
+                if cube == 22 :
+                    if listinlist(line5) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'N'
+                if cube == 23 :
+                    if listinlist(line5) == True :
+                        direction = 'E'
+                    else : 
+                        direction = 'N'
+                if cube == 24 :
+                    if listinlist(line5) == True :
+                        direction = 'W'
+                    else : 
+                        direction = 'N'
+            message = 'OKAYYYYYYYY'
+
+                        
+          
+        else : 
+            return basic(self)# Joue neutre
+        #  Faire une liste ave c NT si liste == 0 alors on prend les X 
+               
+ 
             
             
 
@@ -119,7 +247,7 @@ class Server:
     
 
 
-        return {"move": {'cube' : int(cube), 'direction' : str(direction)}, "message" : str(rdmmessage)}
+        return {"move": {'cube' : int(cube), 'direction' : str(direction)}, "message" : str(message)}
 
 
 
@@ -127,7 +255,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         port=int(sys.argv[1])
     else:
-        port=8082
+        port=8083
 
     cherrypy.config.update({'server.socket_host' : '0.0.0.0','server.socket_port': port})
     cherrypy.quickstart(Server())
