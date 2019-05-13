@@ -73,7 +73,8 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         port=int(sys.argv[1])
     else:
-        port=8081
+        port=8085
+        
 
     cherrypy.config.update({'server.socket_host' : '0.0.0.0','server.socket_port': port})
     cherrypy.quickstart(Server())
