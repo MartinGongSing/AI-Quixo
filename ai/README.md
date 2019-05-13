@@ -1,9 +1,11 @@
 # AI Quixo
 
+## Introduction 
+
 Quixo is a boardgame created by Gigamic
 * [Quixo](https://www.gigamic.com/game/quixo) - the website of the creators of the game
 
-We have created an AI capable of playing without making any bad moves, in python
+We have created an AI capable of playing without making any bad moves, in python (UTF-8 encoding)
 
 ## How to launch the game
 
@@ -44,7 +46,11 @@ cube = random.choice(rdmcube)
 
 ![My idea](https://images.says.com/uploads/story_source/source_image/475645/ea89.jpg)
 
+![CopyRights](https://thumbs.dreamstime.com/t/campos-comunes-creativos-por-el-nd-del-nc-13329631.jpg)
+Ce(tte) oeuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution – Pas d’Utilisation Commerciale – Pas de Modification 4.0 International.
+
 
 
 ##### Image source
 [1](https://www.google.com/search?q=copyright&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjfl6C5kZjiAhVM_qQKHURCBiYQ_AUIDigB&biw=1536&bih=722#imgrc=FxpAoPlQk148tM:)
+[2](https://www.google.com/search?q=(cc)&tbm=isch&tbs=rimg:CeVgBf1AC6JCIji6N647rv--1G9SgXdVE3e_1DrXERXBlSIH5C9ZBHmZY7rYOGSdgmLPAtXiEVjPT96wxO3EMYsrYeSoSCbo3rjuu_177UEUws8Zt8rN2kKhIJb1KBd1UTd78RAKZvuiqM07kqEgkOtcRFcGVIgRFccxMpNjd8_1CoSCfkL1kEeZljuEaSJKz9v_1UTBKhIJtg4ZJ2CYs8ARkOLPliYxmZUqEgm1eIRWM9P3rBFaFBqwkZ5d2CoSCTE7cQxiyth5EVxXr6R2YVBv&tbo=u&sa=X&ved=2ahUKEwjYwrPa2ZjiAhVOaVAKHf5nCQoQ9C96BAgBEBs&biw=1536&bih=722&dpr=1.25#imgrc=b1KBd1UTd7_NiM:)
