@@ -10,7 +10,7 @@ We have created an AI capable of playing without making any bad moves, in python
 * First thing you must do is clone or download the entire repositiry [AI-Quixo](https://github.com/MartinGongSing/AI-Quixo)
 * Then launch the server : [server.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/server.py). Be sure the game you want to play is named 'current.py' [here](https://github.com/MartinGongSing/AI-Quixo/tree/master/public/games) (in this case, it is Quixo)
 * Now you can launch your AI, based on the [matches.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/matches.py) file. (You need to launch 2 entities to play)
-* If you want to play yourself, launch the [Quixo.1.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/input_game/Quixo.1.py) in the [input_game](https://github.com/MartinGongSing/AI-Quixo/tree/master/input_game) repository (special thanks to [Thibaut Maringer](https://github.com/titimar16)) © titimar16
+* If you want to play yourself, launch the [Quixo.1.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/input_game/Quixo.1.py) in the [input_game](https://github.com/MartinGongSing/AI-Quixo/tree/master/input_game) repository (special thanks to [Thibaut Maringer](https://github.com/titimar16)) ©titimar16
 * None of the above would be possible without the original files : [ECAM Brussels - AIGameRunner](https://github.com/ECAM-Brussels/AIGameRunner)
 
 ## Our strategy
