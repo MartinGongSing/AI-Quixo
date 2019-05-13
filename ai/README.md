@@ -5,6 +5,14 @@ Quixo is a boardgame created by Gigamic
 
 We have created an AI capable of playing without making any bad moves, in python
 
+## How to launch the game
+
+* First thing you must do is clone or download the entire repositiry [AI-Quixo](https://github.com/MartinGongSing/AI-Quixo)
+* Then launch the server : [server.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/server.py). Be sure the game you want to play is named 'current.py' (in this case, it is Quixo).
+* Now you can launch your AI, based on the [matches.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/matches.py) file.(You need to launch 2 entities to play)
+* If you want to play yourself, launch the [Quixo.1.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/input_game/Quixo.1.py) in the [input_game](https://github.com/MartinGongSing/AI-Quixo/tree/master/input_game) repository (©Thibaut Maringer).
+* None of the above would be possible without the original file : [ECAM Brussels - AIGameRunner](https://github.com/ECAM-Brussels/AIGameRunner)
+
 ## Our strategy
 
 We noticed that the more cubes bearing our symbol we have, the higher the chances of winning are. So our first strategy is to take all the neutral cubes and turn them (litteraly) on our side. Once all the border cubes are taken, we only play with ours, untill a new neutral block appears. 
