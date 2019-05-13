@@ -47,6 +47,7 @@ cube = random.choice(rdmcube)
 ![My idea](https://images.says.com/uploads/story_source/source_image/475645/ea89.jpg)
 
 ![CopyRights](https://thumbs.dreamstime.com/t/campos-comunes-creativos-por-el-nd-del-nc-13329631.jpg)
+
 Ce(tte) oeuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution – Pas d’Utilisation Commerciale – Pas de Modification 4.0 International.
 
 
