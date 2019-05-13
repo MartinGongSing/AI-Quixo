@@ -7,7 +7,8 @@ We have created an AI capable of playing without making any bad moves, in python
 
 ## Our strategy
 
-We noticed that the more cubes bearing our symbol we have, the higher the chances of winning are. So our first strategy is to take all the neutral cubes and turn them (litteraly) on our side. Once all the border cubes are taken, we only play with ours, untill a new neutral block appears. \ (For now the 'intelligence' is the [Smart_Random.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/Smart_Random.py) file, but will soon be [Super_Smart.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/Super_smart.py) \
+We noticed that the more cubes bearing our symbol we have, the higher the chances of winning are. So our first strategy is to take all the neutral cubes and turn them (litteraly) on our side. Once all the border cubes are taken, we only play with ours, untill a new neutral block appears. 
+\\ (For now the 'intelligence' is the [Smart_Random.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/Smart_Random.py) file, but will soon be [Super_Smart.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/Super_smart.py)) \\
 
 ## Libraries
 
