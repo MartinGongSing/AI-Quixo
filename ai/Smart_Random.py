@@ -104,6 +104,4 @@ if __name__ == "__main__":
         port=8082
 
     cherrypy.config.update({'server.socket_host' : '0.0.0.0','server.socket_port': port})
-    cherrypy.quickstart(Server())
-    
-    
+    cherrypy.quickstart(Server())   
