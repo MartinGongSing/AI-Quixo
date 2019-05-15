@@ -40,9 +40,9 @@ class Server:
              message = 'Nine Nine Nine Nine'
 
         elif body['game'][2] == None :           
-                    cube = 2
-                    direction = 'S'
-                    message = "22 v'là les flics"
+             cube = 2
+             direction = 'S'
+             message = "22 v'là les flics"
 
         elif body['game'][19] == None :           
              cube = 19
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         port=int(sys.argv[1])
     else:
-        port=8083
+        port=8080
 
     cherrypy.config.update({'server.socket_host' : '0.0.0.0','server.socket_port': port})
     cherrypy.quickstart(Server())   
