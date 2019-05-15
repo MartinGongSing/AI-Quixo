@@ -102,7 +102,7 @@ class Server:
                 direction ='S'
                 message = random.choice(rdmmessage)
             elif cube in dirN:
-                direction ='S'
+                direction ='W'
                 message = random.choice(rdmmessage)
             elif cube in dirS:
                 direction ='N'
