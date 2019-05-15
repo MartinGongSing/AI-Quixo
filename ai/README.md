@@ -21,6 +21,8 @@ We noticed that the more cubes bearing our symbol we have, the higher the chance
 
 (For now the 'intelligence' is the [Smart_Random.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/Smart_Random.py) file, but will soon be [Super_Smart.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/Super_smart.py), which strategy should be : "When four of our cubes are next to each other, we will play the fifth if possible")
 
+If you use the [lastidea](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/lastidea.py), the AI will play first in column 1 with cube 0, then line 2 with cube 9, then column 3 with cube 2, then line 4 with cube 19 if those cubes are neutral. Afterwards it wil play following the same strategy as the [Smart_Random.py](https://github.com/MartinGongSing/AI-Quixo/blob/master/ai/Smart_Random.py) file, except that the directions are all vertical except for cubes [9, 14, 19] which will play horizontaly.
+
 ## Libraries
 
 We have used the followings libraries : 
