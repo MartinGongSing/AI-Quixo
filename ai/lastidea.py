@@ -42,7 +42,7 @@ class Server:
         elif body['game'][2] == None :           
                     cube = 2
                     direction = 'S'
-                    message = '222'
+                    message = "22 v'là les flics"
 
         elif body['game'][19] == None :           
              cube = 19
@@ -67,7 +67,9 @@ class Server:
                     cube = random.choice(rdmcube)
                     message = random.choice(rdmmessage)
             else:
-                cube = random.choice(neutral)
+                for i in neutral:
+                    cube = i
+                # cube = random.choice(neutral)
                 message = random.choice(rdmmessage)  
             
             
@@ -94,7 +96,7 @@ class Server:
                 direction ='N'
                 message = random.choice(rdmmessage)
             elif cube in dirE:
-                direction ='S'
+                direction ='W'
                 message = random.choice(rdmmessage)
             elif cube in dirW:
                 direction ='S'
